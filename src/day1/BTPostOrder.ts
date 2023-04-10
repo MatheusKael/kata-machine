@@ -1,7 +1,7 @@
 
-function walk(curr: BinaryNode<number> | null, path: number[]): number[] { 
+function walk(curr: BinaryNode<number> | null, path: number[]): number[] {
 
-    if(!curr) {
+    if (!curr) {
         return path
     }
 
