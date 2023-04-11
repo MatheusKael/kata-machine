@@ -33,4 +33,20 @@ export default function bfs(graph: WeightedAdjacencyMatrix, source: number, need
 
         seen[curr] = true
     } while (q.length)
+
+    if (prev[needle] === -1) {
+        return null
+    }
+
+    let curr = needle
+    const out: number[] = []
+
+
+    while (prev[curr] !== -1) {
+        out.push(curr)
+        curr = prev[curr]
+    }
+
+    return [source].concat(out.reverse())
+
 }
