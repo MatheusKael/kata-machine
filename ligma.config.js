@@ -14,6 +14,7 @@ module.exports = {
         "MazeSolver",
         "QuickSort",
         "BTPreOrder",
+        "DijkstraList",
         "BTInOrder",
         "BTPostOrder",
         "BTBFS",
